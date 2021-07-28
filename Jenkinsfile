@@ -11,7 +11,7 @@
 	}
 	stage('build'){
 	steps {
-	bat 'mvnw.cmd clean package'
+	sh 'mvn clean package'
 	}
 
 	 post {
