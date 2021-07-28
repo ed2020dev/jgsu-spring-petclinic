@@ -14,7 +14,7 @@ pipeline {
         
         stage('build'){
             steps {
-            bat 'mvnw.cmd clean package' // for linux sh 'mvnw clean package' or 'mvn clean package' can be used
+            sh 'mvn clean package' // for linux sh 'mvn clean package' or 'mvn clean package' can be used
             }
         
 
